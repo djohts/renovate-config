@@ -7,7 +7,7 @@
     "group:monorepos"
   ],
 
-  "timezone": "Europe/Kyiv",
+  "timezone": "Europe/Warsaw",
 
   "assignees": ["{{arg0}}"],
   "labels": ["dependencies"],
@@ -28,7 +28,7 @@
   "lockFileMaintenance": {
     "enabled": true,
     "assignees": ["{{arg0}}"],
-    "schedule": ["before 5am on the first day of the month"]
+    "schedule": ["before 5am on the first day of the week"]
   },
   "postUpdateOptions": ["npmDedupe"],
 
