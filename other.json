@@ -50,7 +50,7 @@
     {
       "description": "Ignore major release 17 of dotenv",
       "matchPackageNames": ["dotenv"],
-      "ignoreVersions": ["17.x"]
+      "allowedVersions": "<17"
     },
     {
       "description": "Automerge dependencies with built-in type definitions",
