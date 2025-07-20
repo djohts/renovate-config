@@ -2,16 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Default Renovate config where argument is assignee",
 
-  "extends": [
-    "group:recommended",
-    "group:monorepos"
-  ],
+  "extends": ["group:recommended", "group:monorepos"],
 
   "timezone": "Europe/Warsaw",
 
   "assignees": ["{{arg0}}"],
   "labels": ["dependencies"],
-  "platformCommit": true,
+  "platformCommit": "enabled",
   "platformAutomerge": true,
   "rangeStrategy": "pin",
   "transitiveRemediation": true,
@@ -19,7 +16,7 @@
 
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "prFooter": null,
+  "prFooter": "",
 
   "dependencyDashboard": true,
   "dependencyDashboardHeader": "![](https://i.imgur.com/kX4uzqH.gif)",
@@ -30,7 +27,7 @@
     "assignees": ["{{arg0}}"],
     "schedule": ["before 5am on the first day of the week"]
   },
-  "postUpdateOptions": ["npmDedupe"],
+  "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "gomodTidy"],
 
   "recreateClosed": true,
   "rebaseStalePrs": true,
@@ -68,32 +65,47 @@
       "description": "Group Docusaurus dependencies",
       "matchPackagePrefixes": ["@docusaurus/"],
       "groupName": "Docusaurus",
-      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+      "pin": {
+        "groupName": "Pin Dependencies",
+        "groupSlug": "pin-dependencies"
+      }
     },
     {
       "description": "Group React dependencies",
       "matchPackagePrefixes": ["react", "@types/react"],
       "groupName": "React",
-      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+      "pin": {
+        "groupName": "Pin Dependencies",
+        "groupSlug": "pin-dependencies"
+      }
     },
     {
       "description": "Group linting dependencies",
       "matchPackageNames": ["eslint-config-djohts", "djohts/eslint-config"],
       "extends": ["packages:linters"],
       "groupName": "linting",
-      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+      "pin": {
+        "groupName": "Pin Dependencies",
+        "groupSlug": "pin-dependencies"
+      }
     },
     {
       "description": "Group testing dependencies",
       "extends": ["packages:test"],
       "groupName": "testing",
-      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+      "pin": {
+        "groupName": "Pin Dependencies",
+        "groupSlug": "pin-dependencies"
+      }
     },
     {
       "description": "Group mongoose with typegoose",
       "matchPackageNames": ["mongoose", "@typegoose/"],
       "groupName": "mongoose",
-      "pin": { "groupName": "Pin Dependencies", "groupSlug": "pin-dependencies" }
+      "pin": {
+        "groupName": "Pin Dependencies",
+        "groupSlug": "pin-dependencies"
+      }
     },
     {
       "description": "Avoid pinning peer dependencies",
