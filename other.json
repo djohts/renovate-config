@@ -100,8 +100,8 @@
     },
     {
       "description": "Group mongoose with typegoose",
-      "matchPackageNames": ["mongoose", "@typegoose/"],
-      "groupName": "mongoose",
+      "matchPackageNames": ["mongoose", "@typegoose/**"],
+      "groupName": "mongoose + typegoose",
       "pin": {
         "groupName": "Pin Dependencies",
         "groupSlug": "pin-dependencies"
