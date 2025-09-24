@@ -108,6 +108,15 @@
       }
     },
     {
+      "description": "Group turborepo packages",
+      "matchPackageNames": ["turbo", "eslint-config-turbo"],
+      "groupName": "turborepo packages",
+      "pin": {
+        "groupName": "Pin Dependencies",
+        "groupSlug": "pin-dependencies"
+      }
+    },
+    {
       "description": "Avoid pinning peer dependencies",
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "bump"
