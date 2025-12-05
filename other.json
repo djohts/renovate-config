@@ -27,7 +27,7 @@
     "assignees": ["{{arg0}}"],
     "schedule": ["before 5am on the first day of the week"]
   },
-  "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "gomodTidy", "gomodUpdateImportPaths"],
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
 
   "recreateClosed": true,
   "rebaseStalePrs": true,
