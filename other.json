@@ -52,7 +52,7 @@
     {
       "matchDatasources": ["npm"],
       "minimumReleaseAge": "12 hours"
-    }
+    },
     {
       "description": "Automerge dependencies with built-in type definitions",
       "matchPackageNames": ["discord.js", "@types/node", "typescript"]
