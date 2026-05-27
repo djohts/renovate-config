@@ -51,7 +51,7 @@
     },
     {
       "matchDatasources": ["npm"],
-      "minimumReleaseAge": "12 hours"
+      "minimumReleaseAge": "24 hours"
     },
     {
       "description": "Automerge dependencies with built-in type definitions",
