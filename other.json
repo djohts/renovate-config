@@ -121,6 +121,15 @@
       }
     },
     {
+      "description": "Group inertia packages",
+      "matchPackageNames": ["inertiajs/inertia-laravel", "@inertiajs/**"],
+      "groupName": "inertia packages",
+      "pin": {
+        "groupName": "Pin Dependencies",
+        "groupSlug": "pin-dependencies"
+      }
+    },
+    {
       "description": "Avoid pinning peer dependencies",
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "bump"
