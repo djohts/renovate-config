@@ -76,7 +76,7 @@
     },
     {
       "description": "Group React dependencies",
-      "matchPackagePrefixes": ["react", "@types/react"],
+      "matchPackageNames": ["react", "react-dom", "@types/react"],
       "groupName": "React",
       "pin": {
         "groupName": "Pin Dependencies",
